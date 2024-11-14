@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('/public/myfont.ttf') format('truetype'); /* For .ttf */
+    /* Or, if you have a .woff or .woff2 format */
+    /* src: url('/fonts/MyFont.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'MyFont', sans-serif; /* Fallback to sans-serif */
+}
+.items>h5{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.items>h5:hover{
+    background-color: rgb(226, 225, 225);
+    border-radius: 5px;
+}
+.items>h5>span{
+    margin-right: 4px;
+}
